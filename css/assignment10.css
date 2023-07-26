@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: aqua;
+    font-family: "Titillium Web", sans-serif;
+    background: rgb(36, 53, 63);
+}
+.content-box{
+    background: rgb(36, 53, 63);
+    box-shadow: 5px 5px 50px black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.content-box a:hover{
+    text-decoration:underline ;
+}
+::placeholder{
+    color: white !important;
+}
+.btn-outline-info {
+    color: rgb(23, 162, 184);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(23, 162, 184);
+}
+
+input:focus{
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+h1{
+    color: rgb(23, 162, 184);
+}
+
+#loginBox{
+    display: block;
+}
+#signUpBox{
+    display: none;
+}
+
+.group{
+    box-shadow: 5px 5px 50px black;
+    display: none;
+}
+/* let alreadyExists = arr.some((userInfo) => userInfo.sName === nameInput.value
+); */
