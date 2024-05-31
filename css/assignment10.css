@@ -50,3 +50,13 @@ h1{
 }
 /* let alreadyExists = arr.some((userInfo) => userInfo.sName === nameInput.value
 ); */
+
+
+#loginLink{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#signupLink{
+    cursor: pointer;
+    text-decoration: underline;
+}

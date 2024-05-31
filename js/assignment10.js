@@ -16,14 +16,17 @@ let arr = []
 let myObjectName;
 let myObjectEmail;
 let myObjectPassword;
-let userInfo ={
-
-}
-
+let userInfo ={}
 let LogInEmail;
 let LogInPass;
 
-    for(i = 0; i<arr.length; i++){}
+if(localStorage.getItem("list") == null){
+    arr = []
+}
+else{
+    arr = JSON.parse(localStorage.getItem("list"))
+
+}
 
 function checkInputs(){
     userInfo = {
@@ -104,7 +107,7 @@ function loginFun(){
     }
     else{
         arr = JSON.parse(localStorage.getItem("list"))
-        // console.log(arr);
+        console.log(arr);
         for(i = 0; i<arr.length; i++){
             LogInEmail = arr[i].email
             LogInPass  = arr[i].pass
